@@ -8,3 +8,5 @@ After searching online I could not found a tool to split each frame of a [Phaser
 ```
 pssu <json path> <png path>  <output folder>
 ``` 
+
+It requires **Microsoft .Net Framework 4.5**
