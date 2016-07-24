@@ -56,7 +56,7 @@ namespace PhaserSpriteSheetUnpacker
                         var frame = item.Value.frame;
                         Rectangle cropRect = new Rectangle((int)frame.x.Value, (int)frame.y.Value, (int)frame.w.Value, (int)frame.h.Value);
                         Bitmap sprite = CropImage(bitmap, cropRect);
-                        if (item.Name.Substring(item.Name.Length-4) == ".png")
+                        if (item.Name.Length > 3 && item.Name.Substring(item.Name.Length - 4) == ".png")
                         {
                             sprite.Save(Path.Combine(args[2],item.Name));
                         }
